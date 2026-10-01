@@ -1,0 +1,42 @@
+selector{
+    property: value;
+}
+
+h1{
+    font-size: 24px;
+    color: blue;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.product-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.product-card:hover {
+transform: translateY(-5px);
+transition: transform 0.2s ease;
+}
+
+.buy-button:hover {
+opacity: 0.85;
+}
+
+@media (max-width: 900px) {
+.product-grid {
+grid-template-columns: repeat(2, 1fr);
+}
+}
+
+@media (max-width: 600px) {
+.product-grid {
+grid-template-columns: 1fr;
+}
+}
